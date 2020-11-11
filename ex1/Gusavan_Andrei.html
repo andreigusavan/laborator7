@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { 
+background-color: red;
+}
+h1 {
+font-family: verdana;
+color:black;
+text-align:centre;
+}
+table, th, td {
+border: 2px solid black}
+p{
+font-family: arial;
+font-size: 16px;
+color: white;
+}
+ul{border: 2px solid black;}
+h3{
+font-family: verdana;
+color: yellow;
+text-align: centre;
+}
+h2{
+font-family: verdana;
+color:green;
+text-align: centre;
+}
+img{ border: 2px solid black;
+border-radius: 8px;
+opacity: 1;
+width: 150px;
+display: block;
+padding: 2px;
+margin: left;
+} 
+</style>
+<script>
+function altaViata()
+	{
+	document.getElementById("numeProfil").innerHTML="Ing. Gusavan Andrei-Bogdan"
+	
+	var tabelMaterii= document.getElementById("tabelMaterii");
+	tabelMaterii.rows[1].cells[0].innerHTML="Tehnologii web și baze de date";
+	tabelMaterii.rows[2].cells[0].innerHTML="Circuite electronice fundamentale";
+	tabelMaterii.rows[3].cells[0].innerHTML="Inginerie software";
+	
+	document.getElementById("pozaProfil").src="andrei.jpg"
+	
+	document.body.style.backgroundColor="Yellow";
+	document.getElementById("pozaProfil").style.opacity="0.9";
+	document.getElementById("pozaProfil").style.border="7px";
+	var par =document.getElementsByTagName("p");
+	var i;
+		for(i=0; i<par.length; i++){
+		par[i].style.color="blue";
+		}
+	}
+	</script>
+</head>
+<img id="pozaProfil" src="IMG_1121.jpg"
+<body>
+<h1 id="numeProfil">Gusavan Andrei-Bogdan</h1>
+<p>Nume:Gusavan</p>
+<p>Prenume:Andrei-Bogdan</p>
+<p>Email:andrei.gusavan@gmail.com</p>
+<p>Motto:"Educatia este o descoperire progresiva a propriei noastre ignorante."</p>
+<button type="button" onclick="altaViata()">Alta Viata</button>
+<table id="tabelMaterii"> 
+<tr>
+<th>
+<h2>Discipline aprofundate:</h2>
+</th>
+</tr>
+<tr>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf">Programarea calculatoarelor</a> </td>
+</tr>
+<tr>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">Componente și circuite electronice pasive</a> </td>
+</tr>
+<tr>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf">Analiză matematică</a> </td>
+</tr>
+</table>
+<h3>Hobby-uri:</h3>
+<ul>
+<li>Fotbal</li>
+<li>Gaming</li>
+<li>Citit</li>
+</ul>
+</body>
+</html>
